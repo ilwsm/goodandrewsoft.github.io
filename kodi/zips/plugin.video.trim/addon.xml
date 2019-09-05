@@ -16,6 +16,13 @@
     <extension point="xbmc.python.script" library="utils/script.py">
     </extension>
 
+    <extension point="xbmc.addon.repository" name="Kodi Repo from Goodandrewsoft">
+        <info compressed="false">https://goodandrewsoft.github.io/kodi/zips/addons.xml</info>
+        <checksum>https://goodandrewsoft.github.io/kodi/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://goodandrewsoft.github.io/kodi/zips/</datadir>
+        <hashes>true</hashes>
+    </extension>
+
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Trimming Video</summary>
         <description lang="en_GB">Trimming Video</description>

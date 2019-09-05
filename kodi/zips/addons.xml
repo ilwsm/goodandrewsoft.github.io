@@ -1,5 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.trim" name="Video Trimming" provider-name="ilw" version="1.0.0">
+<addons><addon id="repository.goodandrewsoft" name="Kodi Repo by GoodAndrewSoft" provider-name="ilw" version="1.0.1">
+  <extension name="Kodi Repo by GoodAndrewSoft" point="xbmc.addon.repository">
+    <info compressed="false">https://goodandrewsoft.github.io/kodi/zips/addons.xml</info>
+    <checksum>https://goodandrewsoft.github.io/kodi/zips/addons.xml.md5</checksum>
+    <datadir zip="true">https://goodandrewsoft.github.io/kodi/zips/</datadir>
+    <hashes>true</hashes>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Install Kodi add-ons by GoodAndrewSoft</summary>
+    <description>Good Addons</description>    
+    <platform>all</platform>
+    <website>https://goodandrewsoft.github.io</website>
+  </extension>
+</addon><addon id="plugin.video.trim" name="Video Trimming" provider-name="ilw" version="1.0.0">
     <requires>
         <import addon="xbmc.python" version="2.26.0" />
     </requires>

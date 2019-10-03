@@ -3,7 +3,7 @@
     <requires>
         <import addon="xbmc.python" version="2.26.0" />
         <import addon="script.module.youtube.dl" optional="true" version="17.709.0" />
-        
+        <import addon="script.gas.yul" optional="true" version="1.0.0" />
     </requires>
 
     <extension point="kodi.context.item">
@@ -88,7 +88,7 @@
     <import addon="script.module.requests" version="2.12.4" />
     <import addon="script.module.oauth2client" version="4.1.2" />
     <import addon="script.module.googleapi" version="1.6.4" />
-    
+    <import addon="plugin.video.gastools" version="1.0.0" />
   </requires>
   <extension library="script.py" point="xbmc.python.script">
     <provides>executable</provides>

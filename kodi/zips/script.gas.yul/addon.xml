@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <addon id="script.gas.yul" name="GAS YouTube Upload" version="1.0.0" provider-name="GoodAndrewSoft">
-    <requires>
-        <import addon="xbmc.python" version="2.26.0"/>
-        <import addon="script.module.requests" version="2.12.4"/>
-        <import addon="script.module.oauth2client" version="4.1.2"/>
-        <import addon="script.module.googleapi" version="1.6.4"/>
-        <import addon="plugin.video.gastools" version="1.0.0"/>
-    </requires>
-
-    <extension point="xbmc.python.script" library="script.py">
-        <provides>executable</provides>
-    </extension>
-
-    <extension point="xbmc.python.module" library="lib" />
-
-
-
-    <extension point="xbmc.service" library="service.py"/>
-
+  <requires>
+    <import addon="xbmc.python" version="2.26.0" />
+    <import addon="script.module.requests" version="2.12.4" />
+    <import addon="script.module.oauth2client" version="4.1.2" />
+    <import addon="script.module.googleapi" version="1.6.4" />
+    <import addon="plugin.video.gastools" version="1.0.0" optional="true" />
+  </requires>
+  <extension point="xbmc.python.script" library="script.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.service" library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">GAS YouTube Upload</summary>
+    <description lang="en_GB">GAS YouTube Upload</description>
+    <disclaimer lang="en_GB"></disclaimer>
+    <language>en</language>
+    <platform>linux windows android</platform>
+    <license>GPL-2.0</license>
+    <forum></forum>
+    <website></website>
+    <email>memm@mail.ru</email>
+    <source></source>
+    <news></news>
+    <assets>
+      <icon></icon>
+      <fanart></fanart>
+      <banner></banner>
+      <clearlogo></clearlogo>
+      <screenshot></screenshot>
+    </assets>
+  </extension>
 </addon>

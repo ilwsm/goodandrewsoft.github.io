@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<addon id="script.gas.yul" name="GAS YouTube Upload" version="1.0.0" provider-name="GoodAndrewSoft">
+    <requires>
+        <import addon="xbmc.python" version="2.26.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="script.module.oauth2client" version="4.1.2"/>
+        <import addon="script.module.googleapi" version="1.6.4"/>
+        <import addon="plugin.video.gastools" version="1.0.0"/>
+    </requires>
+
+    <extension point="xbmc.python.script" library="script.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.python.module" library="lib" />
+
+
+
+    <extension point="xbmc.service" library="service.py"/>
+
+</addon>

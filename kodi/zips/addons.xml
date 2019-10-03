@@ -1,17 +1,57 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="repository.goodandrewsoft" name="Kodi Repo by GoodAndrewSoft" provider-name="ilw" version="1.0.1">
-  <extension name="Kodi Repo by GoodAndrewSoft" point="xbmc.addon.repository">
-    <info compressed="false">https://goodandrewsoft.github.io/kodi/zips/addons.xml</info>
-    <checksum>https://goodandrewsoft.github.io/kodi/zips/addons.xml.md5</checksum>
-    <datadir zip="true">https://goodandrewsoft.github.io/kodi/zips/</datadir>
-    <hashes>true</hashes>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Install Kodi add-ons by GoodAndrewSoft</summary>
-    <description>Good Addons</description>    
-    <platform>all</platform>
-    <website>https://goodandrewsoft.github.io</website>
-  </extension>
+<addons><addon id="plugin.video.gastools" name="GAS Tools" provider-name="ilw" version="1.0.0">
+    <requires>
+        <import addon="xbmc.python" version="2.26.0" />
+        <import addon="script.module.youtube.dl" optional="true" version="17.709.0" />
+        <import addon="script.gas.yul" optional="true" version="1.0.0" />
+    </requires>
+
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="contextitem.py">
+                <label>30103</label>
+                
+                <visible>!ListItem.IsFolder+!Container.Content()+!Container.Content(addons)</visible>
+            </item>
+        </menu>
+    </extension>
+
+    <extension library="script.py" point="xbmc.python.script">
+        <provides>executable</provides>
+    </extension>
+
+
+    <extension library="service.py" point="xbmc.service" />
+
+    <extension library="lib" point="xbmc.python.module" />
+
+    <extension name="Kodi Repo from Goodandrewsoft" point="xbmc.addon.repository">
+        <info compressed="false">https://goodandrewsoft.github.io/kodi/zips/addons.xml</info>
+        <checksum>https://goodandrewsoft.github.io/kodi/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://goodandrewsoft.github.io/kodi/zips/</datadir>
+        <hashes>true</hashes>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Tools</summary>
+        <description lang="en_GB">Tools</description>
+        <disclaimer lang="en_GB" />
+        <language>en</language>
+        <platform>linux windows android</platform>
+        <license>GPL-2.0</license>
+        <forum />
+        <website />
+        <email>memm@mail.ru</email>
+        <source />
+        <news />
+        <assets>
+            <icon />
+            <fanart />
+            <banner />
+            <clearlogo />
+            <screenshot />
+        </assets>
+    </extension>
 </addon><addon id="plugin.video.trim" name="Video Trimming" provider-name="ilw" version="1.0.0">
     <requires>
         <import addon="xbmc.python" version="2.26.0" />
@@ -41,7 +81,7 @@
         <description lang="en_GB">Trimming Video</description>
         <disclaimer lang="en_GB" />
         <language>en</language> 
-        <platform>linux windows android-armv7</platform>
+        <platform>linux windows android</platform>
         <license>GPL-2.0</license>
         <forum /> 
         <website /> 
@@ -56,4 +96,23 @@
             <screenshot />
         </assets>
     </extension>
+</addon><addon id="script.gas.yul" name="GAS YouTube Upload" provider-name="GoodAndrewSoft" version="1.0.0">
+    <requires>
+        <import addon="xbmc.python" version="2.26.0" />
+        <import addon="script.module.requests" version="2.12.4" />
+        <import addon="script.module.oauth2client" version="4.1.2" />
+        <import addon="script.module.googleapi" version="1.6.4" />
+        <import addon="plugin.video.gastools" version="1.0.0" />
+    </requires>
+
+    <extension library="script.py" point="xbmc.python.script">
+        <provides>executable</provides>
+    </extension>
+
+    <extension library="lib" point="xbmc.python.module" />
+
+
+
+    <extension library="service.py" point="xbmc.service" />
+
 </addon></addons>

@@ -3,7 +3,7 @@
     <requires>
         <import addon="xbmc.python" version="2.26.0"/>
         <import addon="script.module.youtube.dl" version="17.709.0" optional="true"/>
-        <import addon="script.gas.yul" version="1.0.0" optional="true"/>
+        <!-- <import addon="script.gas.yul" version="1.0.0" optional="true"/> -->
     </requires>
 
     <extension point="kodi.context.item">

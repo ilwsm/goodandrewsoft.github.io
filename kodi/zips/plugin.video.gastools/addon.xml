@@ -23,14 +23,7 @@
 
     <extension point="xbmc.service" library="service.py"/>
 
-    <extension point="xbmc.python.module" library="lib"/>
-
-    <extension point="xbmc.addon.repository" name="Kodi Repo from Goodandrewsoft">
-        <info compressed="false">https://goodandrewsoft.github.io/kodi/zips/addons.xml</info>
-        <checksum>https://goodandrewsoft.github.io/kodi/zips/addons.xml.md5</checksum>
-        <datadir zip="true">https://goodandrewsoft.github.io/kodi/zips/</datadir>
-        <hashes>true</hashes>
-    </extension>
+    <extension point="xbmc.python.module" library="lib"/>    
 
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Tools</summary>

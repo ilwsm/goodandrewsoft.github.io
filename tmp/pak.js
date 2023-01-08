@@ -136,7 +136,8 @@ function FindProxyForURL(url, host) {
 		"*habr.com",
 		"*doramamania.mybb.ru",
 		"*cyberforum.ru",
-		"*cyberstatic.net"
+		"*cyberstatic.net",
+		"*linux.org.ru
 	];
 
 	for (i = 0; i < hosts2.length; i++) {

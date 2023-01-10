@@ -142,7 +142,7 @@ function FindProxyForURL(url, host) {
 
 	for (i = 0; i < hosts2.length; i++) {
         if (shExpMatch(host, hosts2[i])) {
-            return 'PROXY 16.170.236.167:9999';
+            return 'PROXY 13.48.123.125:9999';
         }
     }
 	

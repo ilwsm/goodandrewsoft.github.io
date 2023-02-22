@@ -138,7 +138,7 @@ function FindProxyForURL(url, host) {
 		"*cyberforum.ru",
 		"*cyberstatic.net",
 		"*linux.org.ru", 
-		"*zoneofgames.ru
+		"*zoneofgames.ru"
 	];
 
 	for (i = 0; i < hosts2.length; i++) {

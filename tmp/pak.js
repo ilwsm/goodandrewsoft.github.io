@@ -138,7 +138,10 @@ function FindProxyForURL(url, host) {
 		"*cyberforum.ru",
 		"*cyberstatic.net",
 		"*linux.org.ru", 
-		"*zoneofgames.ru"
+		"*zoneofgames.ru",
+		"*tomato-fansubs.ru",
+		"*mundonovelas.ru",
+		"*shun-ascension.do.am"
 	];
 
 	for (i = 0; i < hosts2.length; i++) {

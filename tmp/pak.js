@@ -139,7 +139,7 @@ function FindProxyForURL(url, host) {
 		"*cyberstatic.net",
 		"*linux.org.ru", 
 		"*zoneofgames.ru",
-		"*tomato-fansubs.ru",
+		"*pspx.ru",
 		"*mundonovelas.ru",
 		"*shun-ascension.do.am"
 	];

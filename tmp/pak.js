@@ -140,7 +140,7 @@ function FindProxyForURL(url, host) {
 		"*linux.org.ru", 
 		"*zoneofgames.ru",
 		"*pspx.ru",
-		"*mundonovelas.ru",
+		"*oszone.net",
 		"*shun-ascension.do.am"
 	];
 

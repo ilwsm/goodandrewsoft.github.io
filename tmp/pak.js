@@ -141,7 +141,7 @@ function FindProxyForURL(url, host) {
 		"*zoneofgames.ru",
 		"*pspx.ru",
 		"*oszone.net",
-		"*shun-ascension.do.am"
+		"*rsdn.org"
 	];
 
 	for (i = 0; i < hosts2.length; i++) {

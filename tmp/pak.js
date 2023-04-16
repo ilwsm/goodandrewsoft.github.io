@@ -142,7 +142,7 @@ function FindProxyForURL(url, host) {
         "*pspx.ru",
         "*oszone.net",
         "*rsdn.org",
-	"*boosty.to
+	"*boosty.to"
     ];
 
     for (i = 0; i < hosts2.length; i++) {
